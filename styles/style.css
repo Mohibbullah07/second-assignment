@@ -239,10 +239,32 @@ nav li {
     background: #FFF4E7;
     border-radius: 8px;
     height: 80px;
-    width: 1120px;
+    width: 83%;
     margin-left: 95px;
     text-align: center;
     margin-top: 30px;
     padding: 25px;
     color: #424242;
+}
+
+
+/* Responsive section */
+
+@media screen and (max-width:576px) {
+    .some-facts-container{
+        flex-direction: column;
+    
+    }
+    .team-section {
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .love-enjoy-container{
+        flex-direction: column;
+    }
+
+    .sponspors-images-container{
+        flex-direction: column;
+        margin: 50px;
+    }
 }
